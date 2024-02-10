@@ -10,6 +10,9 @@ export const instance = axios.create({
 export const desksApi = {
   fetchDesks() {
     return instance.get<FetchDecksResponseType>('/v2/decks')
+  },
+  createDesk(name: string) {
+    return instance.post<Deck>('/v1/decks', {name: name})
   }
 }
 

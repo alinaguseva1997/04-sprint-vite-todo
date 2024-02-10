@@ -1,8 +1,8 @@
 import {decksReducer} from "../features/decks/decks-reducer.ts";
-import {ThunkDispatch} from "redux-thunk";
+import thunkMiddleware,{ThunkDispatch} from "redux-thunk";
 import {TypedUseSelectorHook, useDispatch, useSelector} from "react-redux";
-import {AnyAction, applyMiddleware, combineReducers, legacy_createStore} from "redux";
-import thunkMiddleware from 'redux-thunk';
+import {applyMiddleware, combineReducers, legacy_createStore} from "redux";
+import {AnyAction} from "redux";
 
 const rootReducer = combineReducers({
   decks: decksReducer,
