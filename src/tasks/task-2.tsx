@@ -9,7 +9,7 @@ function MyComponent<T>(props: MyComponentProps<T>) {
 
 const App = () => {
   const users: User[] = [
-    { name: 'Bilbo', age: 111 },
+    { name: 'Ivan', age: 111 },
     { name: 'Frodo', age: 33 },
   ]
 

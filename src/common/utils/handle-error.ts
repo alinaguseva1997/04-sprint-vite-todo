@@ -16,6 +16,7 @@ export const handleError = (err: any, dispatch: Dispatch) => {
     console.log(errorMessage)
 }
 
+
 export type ServerError = {
     errorMessages: Array<{ field: string; message: string }>
 }
