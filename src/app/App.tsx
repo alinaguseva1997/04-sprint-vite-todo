@@ -8,10 +8,10 @@ import {appSelector} from "./app-selectors.ts";
 export const App = () => {
     const status = useAppSelector(appSelector)
   return (
-    <div>
-        {status === 'loading' && <LinearLoader />}
-      <Decks />
-        <GlobalError />
-    </div>
+      <div>
+          {status === 'loading' && <LinearLoader/>}
+          <Decks/>
+          <GlobalError/>
+      </div>
   )
 }

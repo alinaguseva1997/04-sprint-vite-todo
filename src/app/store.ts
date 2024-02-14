@@ -8,7 +8,6 @@ const rootReducer = combineReducers({
   app: appReducer,
   decks: decksReducer,
 })
-
 export const store = legacy_createStore(rootReducer, applyMiddleware(thunkMiddleware))
 
 export type AppRootState = ReturnType<typeof rootReducer>
